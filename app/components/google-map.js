@@ -3,6 +3,15 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   map: Ember.inject.service('google-map'),
   didInsertElement() {
+    debugger;
+    var location = this.get('location');
+    var geocoder = new google.maps.Geocoder();
+    geocoder.geocode( {address: location}, (result, status) => {
+      if (status === 'OK') {
+        let location = result[0].geometry.location;
+        let postion = {lat: location.lat(), lng: location.lng()};
+      }
+    })
     var container = this.$('.map-display')[0];
     var options = {
       center: this.get('map').center(this.get('listing.latitude'), this.get('listing.longitude')),
