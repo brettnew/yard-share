@@ -1,7 +1,20 @@
-# Yard-share
+# Yard Share
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+#### Javascript Group Project for Epicodus, 09/02/2016
+
+#### By Brett New, Julia Dickey, Molly McGlone, and Dylan Barnard
+
+## Description
+
+* This app allows users to either rent or rent out green spaces/ yards for purposes such as picnics, camping, gardening, etc.
+
+* Users can create account to be either a renter or owner
+* Users can log into acount to edit or delete it
+* Users can view homepage of website to see featured listings
+* If user is a renter, they can review owner and create bookings to reserve properties
+* If user is an owner, they can add properties and review renters who have used that property
+* Usernames by reviews can be clicked on and will lead to the profile of the person who left the review.
+
 
 ## Prerequisites
 
@@ -50,4 +63,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
